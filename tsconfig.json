@@ -1,0 +1,25 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "react",
+    "lib": ["esnext", "dom"],
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "components": ["./components/*"],
+      "stories": ["./stories/*"],
+    },
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "include": ["./stories/**/*", "./components/**/*"],
+  "exclude": ["node_modules", ".storybook"],
+}
+ 
