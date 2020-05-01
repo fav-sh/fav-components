@@ -15,10 +15,10 @@
     "@types/styled-components": "^5.1.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-module-resolver": "^4.0.0",
+    "babel-preset-react-app": "^9.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "styled-components": "^5.1.0",
-    "ts-loader": "^7.0.2",
     "typescript": "^3.8.3"
   }
 }
