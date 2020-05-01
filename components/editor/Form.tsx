@@ -4,7 +4,7 @@ export const ContentContainer = styled.div`
   padding: 0.5em;
   overflow-x: hidden;
   overflow-y: scroll;
-  height: 400px;
+  height: 450px;
   padding-bottom: 1.5em;
 `
 
