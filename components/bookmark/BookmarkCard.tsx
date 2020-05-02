@@ -45,13 +45,13 @@ const _DeleteButton = ({ onClick }: ButtonProps) => (
 )
 
 const _Container = styled.div`
-  width: 700px;
+  width: 680px;
   height 75px;
   border-bottom: 1px solid #78909C;
   display: flex; 
   flex-direction: row;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 0px;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 `
