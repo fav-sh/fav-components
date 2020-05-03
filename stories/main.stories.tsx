@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Window from 'components/window/Window'
 
 import HeaderContainer from 'components/header/HeaderContainer'
@@ -10,6 +10,7 @@ import MenuButton from 'components/buttons/MenuButton'
 import CreateButton from 'components/buttons/CreateButton'
 import BookmarkCard from 'components/bookmark/BookmarkCard'
 import BookmarkList from 'components/bookmark/BookmarkList'
+import Sidebar from 'components/sidebar/Sidebar'
 
 export default { title: 'Main Window' }
 
@@ -69,18 +70,21 @@ const bookmarks1 = [
 ]
 
 const WindowWithHeader = ({ children }: { children: any }) => {
+  const [visible, setVisible] = useState(false)
   return (
     <Window>
       <HeaderContainer>
         <HeaderLeft>
-          <MenuButton onClick={() => alert('clicked')} />
+          <MenuButton onClick={() => setVisible(!visible)} />
           <HeaderTitle>Fav</HeaderTitle>
         </HeaderLeft>
         <HeaderRight>
           <CreateButton onClick={() => alert('clicked')} />
         </HeaderRight>
       </HeaderContainer>
-      <BookmarkList>{children}</BookmarkList>
+      <Sidebar visible={visible}>
+        <BookmarkList>{children}</BookmarkList>
+      </Sidebar>
     </Window>
   )
 }

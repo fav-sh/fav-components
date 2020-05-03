@@ -15,6 +15,7 @@ const _Outer = styled.div`
   overflow-x: hidden;
   overflow-y: scroll;
   height: 450px;
+  flex-grow: 1;
 `
 
 const _Inner = styled.div`
