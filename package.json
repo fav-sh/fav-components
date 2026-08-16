@@ -9,7 +9,7 @@
   "author": "Sunny Golovine",
   "license": "MIT",
   "dependencies": {
-    "@babel/core": "^7.9.6",
+    "@babel/core": "^8.0.0",
     "@storybook/addon-knobs": "^5.3.18",
     "@storybook/react": "^5.3.18",
     "@types/styled-components": "^5.1.0",
